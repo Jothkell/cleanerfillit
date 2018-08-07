@@ -6,7 +6,7 @@
 /*   By: jkellehe <jkellehe@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/04 19:42:11 by jkellehe          #+#    #+#             */
-/*   Updated: 2018/08/05 16:27:47 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 22:52:12 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int				sub_checker(t_piece *p, t_boards *board)
 {
 	if (!(p[board->current].id >= 'A' && p[board->current].id <= 'Z'))
 		return (1);
+	if (board->counter++ > 2000000)
+		return (2);
 	if ((p[board->current].width > board->size)
 		|| (p[board->current].height > board->size))
 		return (2);

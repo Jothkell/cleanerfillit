@@ -6,7 +6,7 @@
 /*   By: jkellehe <jkellehe@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 12:17:05 by jkellehe          #+#    #+#             */
-/*   Updated: 2018/08/04 20:24:18 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 21:58:12 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int		checker(t_piece *p, t_boards *board)
 
 int		solver(t_piece *p, t_boards *board)
 {
-	board->size = (board->pnum) * 2;
+	board->size = (board->pnum) * 2 + 2;
 	while (1 == checker(p, board))
 	{
 		board->current = 0;

@@ -6,7 +6,7 @@
 /*   By: jkellehe <jkellehe@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/17 16:38:23 by jkellehe          #+#    #+#             */
-/*   Updated: 2018/08/05 16:57:26 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 22:27:46 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,14 +96,13 @@ int				zero_it(t_boards *board, t_piece *p)
 	i = 0;
 	while (i < 28)
 	{
-		p[i].placed = 0;
-		p[i].firstcheck = 1;
 		p[i].xlast = 0;
 		p[i].ylast = 0;
 		i++;
 	}
 	board[0].final = (char)malloc(sizeof(char));
 	i = 0;
+	board[0].counter = 0;
 	board[0].tlx = 0;
 	board[0].tly = 0;
 	board[0].xmax = 0;
@@ -138,7 +137,6 @@ int				main(int argc, char **argv)
 		return (1);
 	}
 	board->final = get_final(p, board);
-	board->size = 3;
 	if (solver(p, board))
 		printer(p, board);
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: dknoll <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/08 17:02:15 by dknoll            #+#    #+#             */
-/*   Updated: 2018/08/06 12:49:41 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 22:25:53 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,10 @@ struct				s_piece
 {
 	uint64_t		value[4];
 	uint8_t			id;
-	int				xhold;
 	int				xlast;
 	int				ylast;
-	uint8_t			placed;
 	uint8_t			width;
 	uint8_t			height;
-	uint8_t			firstcheck;
 	uint8_t			i;
 };
 
@@ -46,9 +43,9 @@ struct				s_boards
 	int				tly;
 	int				xmax;
 	int				ymax;
-	uint8_t			count;
 	uint8_t			hold;
 	uint8_t			flag;
+	unsigned int	counter;
 };
 
 int					get_top(uint64_t *value);
