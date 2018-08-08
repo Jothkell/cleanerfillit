@@ -6,7 +6,7 @@
 /*   By: dknoll <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/08 17:02:15 by dknoll            #+#    #+#             */
-/*   Updated: 2018/08/06 22:25:53 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 23:50:41 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 typedef struct s_piece		t_piece;
 typedef struct s_boards		t_boards;

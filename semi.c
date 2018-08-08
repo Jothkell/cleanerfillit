@@ -6,7 +6,7 @@
 /*   By: jkellehe <jkellehe@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/17 16:38:23 by jkellehe          #+#    #+#             */
-/*   Updated: 2018/08/06 22:27:46 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/06 23:52:12 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,5 +139,6 @@ int				main(int argc, char **argv)
 	board->final = get_final(p, board);
 	if (solver(p, board))
 		printer(p, board);
+	printf("%d\n", board->counter);
 	return (0);
 }
