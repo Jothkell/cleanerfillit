@@ -6,7 +6,7 @@
 /*   By: dknoll <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/08 17:02:15 by dknoll            #+#    #+#             */
-/*   Updated: 2018/08/06 23:50:41 by jkellehe         ###   ########.fr       */
+/*   Updated: 2018/08/08 12:36:29 by jkellehe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ struct				s_boards
 	int				tly;
 	int				xmax;
 	int				ymax;
-	uint8_t			hold;
 	uint8_t			flag;
 	unsigned int	counter;
 };
